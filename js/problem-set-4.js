@@ -3,6 +3,9 @@
  */
 
 function hello() {
+  var p = document.getElementById("output1");
+  p.innerHTML = "Hello, AP Computer Science Principles!";
+
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
@@ -16,9 +19,14 @@ function hello() {
  */
 
 function helloAgain() {
+  var greeting = document.getElementById("output2");
+  greeting.innerHTML = "Hello, " + name + "!";
 
   //////////// DO NOT MODIFY
-  let name; // DO NOT MODIFY
+  let name = prompt("Enter Your Name");
+
+
+   // DO NOT MODIFY
   //////////// DO NOT MODIFY
 
   // Use the name variable declared above to store the user's response. You
