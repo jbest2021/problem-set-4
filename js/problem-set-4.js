@@ -18,12 +18,12 @@ function hello() {
  * Hello, Again. 3 points.
  */
 
-function helloAgain() {
-  var greeting = document.getElementById("output2");
-  greeting.innerHTML = "Hello, " + name + "!";
-
   //////////// DO NOT MODIFY
-  let name = prompt("Enter Your Name");
+  function helloAgain() {
+    let name = prompt("Enter Your Name");
+    var greeting = document.getElementById("output2");
+    greeting.innerHTML = "Hello, " + name + "!";
+
 
 
    // DO NOT MODIFY
@@ -49,6 +49,7 @@ function celsius() {
   let cels = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
 
+  var fhar = document.getElementById("output3");
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
@@ -68,7 +69,7 @@ function fahrenheit() {
   //////////////////////////////////////////////////////// DO NOT MODIFY
   let fahr = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
-
+var cels = document.getElementById("output4");
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
