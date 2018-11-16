@@ -49,7 +49,9 @@ function celsius() {
   let cels = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
 
-  var fhar = document.getElementById("output3");
+  let farenheit= ((cels * 9/5)+32).toFixed(2);
+  let div3=document.getElementById("output3");
+  div3.innerHTML=(cels+ " degrees Celsius equals " + farenheit + " degrees Fahrenheit.");
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
@@ -69,7 +71,9 @@ function fahrenheit() {
   //////////////////////////////////////////////////////// DO NOT MODIFY
   let fahr = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
-var cels = document.getElementById("output4");
+  let celsius= ((fahr - 32) *(5/9)).toFixed(2);
+  let div4= document.getElementById("output4");
+  div4.innerHTML= (fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius.");
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
@@ -98,7 +102,12 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
-
+let miles=Math.floor(inches/63360);
+let yards=Math.floor((inches - (miles * 63360))/36);
+let feet=Math.floor((inches - (miles * 63360) - (yards*36))/12);
+inches=Math.floor((inches - (miles * 63360) - (yards*36) - (feet*12))/1);
+let div5=  document.getElementById("output5");
+div5.innerHTML=("Miles: " + miles + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inches);
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -122,6 +131,11 @@ function centimeters() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 6 CODE HERE
+  let kilometer=Math.floor(kilometer/100000);
+  let meter=Math.floor((centimeter - (kilometer * 1000000))/100);
+centimeter=Math.floor(centimeter - (kilometer * 1000000) - (meters*100))/1);
+  let div6=  document.getElementById("output6");
+  div5.innerHTML=("Kilometers: " + kilometers + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inches);
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
